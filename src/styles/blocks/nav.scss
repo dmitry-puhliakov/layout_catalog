@@ -1,8 +1,6 @@
 .nav {
   &__list {
     display: flex;
-    // margin: 0;
-    // padding: 0;
     list-style: none;
   }
   
@@ -27,6 +25,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
+    transition: color $animation-time ease-out;
   }
   
   &__link:hover {
