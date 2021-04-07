@@ -1,9 +1,9 @@
-.catalog {
-  @extend %flex-center;
-  flex-wrap: wrap;
-  max-width: $catalog-width;
+.catalog__content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, $card-width);
+  gap: $vertical-cards-gap $horizontal-cards-gap;
 
-  &__item {
-    margin: 0 $margin-between-cards $page-content-margin-bottom;
-  }
+  max-width: $catalog-width;
+  margin: 0 auto;
 }
